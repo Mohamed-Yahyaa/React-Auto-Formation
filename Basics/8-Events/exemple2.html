@@ -16,17 +16,17 @@
 
     <script type="text/babel">
 
-function Cars (){
-    const shoot = () =>{
-        alert( "what's  color car!")
+function Football() {
+    const shoot = (a) => {
+      alert(a);
     }
-
+  
     return (
-        <button onClick = {shoot}> Color is Black </button>
-    
-    )
-    ReactDOM.render(<Cars/>, document.getElementById("root"));
-}
+      <button onClick={() => shoot("Goal!")}>Take the shot!</button>
+    );
+  }
+  
+  ReactDOM.render(<Football/>, document.getElementById("root"));
 
 </script>
 
